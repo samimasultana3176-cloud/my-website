@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Samima Sultana | CSE Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f6f4; --ink:#14201b; --muted:#53635b; --line:#cfdad4; --card:#ffffff; --accent:#0f6b54; --accent-ink:#ffffff;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0e1714; --ink:#e8f0ec; --muted:#9bb0a6; --line:#25362f; --card:#14211c; --accent:#4fd1a5; --accent-ink:#06130e;}
+}
+:root[data-theme="dark"]{--bg:#0e1714; --ink:#e8f0ec; --muted:#9bb0a6; --line:#25362f; --card:#14211c; --accent:#4fd1a5; --accent-ink:#06130e;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hanken Grotesk",system-ui,sans-serif;line-height:1.6;font-size:1.05rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.5rem}
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;border-bottom:1px solid var(--line)}
+.nav b{font-family:Fraunces,Georgia,serif;font-size:1.15rem}
+.nav ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0}
+.nav a{text-decoration:none;color:var(--muted);font-weight:500}
+.nav a:hover{color:var(--accent)}
+.hero{padding:5rem 0 4rem}
+.hero h1{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:clamp(2.8rem,9vw,5.6rem);line-height:1;margin:0 0 1.5rem;letter-spacing:-.02em}
+.hero p{max-width:34rem;color:var(--muted);font-size:1.2rem;margin:0 0 2rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:999px;text-decoration:none;font-weight:700;border:2px solid var(--accent)}
+.btn.main{background:var(--accent);color:var(--accent-ink)}
+.btn.alt{color:var(--accent)}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font-family:Fraunces,Georgia,serif;font-size:2rem;margin:0 0 1.5rem}
+.about{max-width:40rem;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.25rem}
+.card h3{margin:0 0 .4rem;font-size:1.1rem}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.tags{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0;margin:0}
+.tags li{padding:.4rem .9rem;border:1px solid var(--line);border-radius:999px;background:var(--card)}
+.contact a{color:var(--accent);font-weight:700}
+footer{padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (max-width:560px){.nav ul{gap:.8rem;font-size:.95rem}.hero{padding:3rem 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="nav">
+    <b>Samima Sultana</b>
+    <nav aria-label="Main"><ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Samima Sultana</h1>
+      <p>Computer Science and Engineering student at United International University, learning to build software that works well and is easy to use.</p>
+      <div class="btns">
+        <a class="btn main" href="#contact">Get in touch</a>
+        <a class="btn alt" href="#about">About me</a>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p class="about">I am studying Computer Science and Engineering (CSE) at United International University (UIU). I enjoy solving problems with code and am building my skills through coursework and personal projects. I am currently learning Artificial Intelligence and Machine Learning. I am open to internships, collaborations, and learning opportunities.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>B.Sc. in Computer Science and Engineering</h3>
+          <p>United International University, Dhaka. Expected graduation: 2028</p></div><div class="card"><h3>Higher Secondary (HSC)</h3><p>Dhaka Commerce College, 2023</p></div><div class="card"><h3>Secondary (SSC)</h3><p>Monipur High School and College, 2021</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Blood Donation</h3>
+          <p>A DBMS course project that stores and manages blood donor and blood request information in a database.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="tags">
+        <li>C</li><li>C++</li><li>HTML</li><li>OOP</li><li>DSA</li><li>DBMS</li><li>AI &amp; ML (learning)</li>
+      </ul>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <ul class="tags">
+        <li>Bangla (native)</li><li>English (fluent)</li><li>Hindi</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:samimasultana3176@gmail.com">samimasultana3176@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Samima Sultana</footer>
+</div>
+</body>
+</html>
